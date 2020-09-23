@@ -12,6 +12,8 @@ get_header();
 
 	<main id="primary" class="site-main">
 
+		<?php include 'page_banner.php' ?>
+
 		<?php
 		while ( have_posts() ) :
 			the_post();

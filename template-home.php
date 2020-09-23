@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * Template Name: Home
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -18,7 +18,7 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<?php include 'page_banner.php' ?>
-		
+
 		<div class='oko-contain-wrapper'>
 
 			<div class='oko-constrain'>

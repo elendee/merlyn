@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.0.1' );
 }
 
 if ( ! function_exists( 'merlyn_setup' ) ) :
@@ -140,10 +140,20 @@ add_action( 'widgets_init', 'merlyn_widgets_init' );
  * Enqueue scripts and styles.
  */
 function merlyn_scripts() {
-	wp_enqueue_style( 'merlyn-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'merlyn-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'merlyn-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_style( 'merlyn-style', get_template_directory_uri() . '/css/merlyn.css', array(), _S_VERSION );
+
+	wp_enqueue_style( 'merlyn-menu-style', get_template_directory_uri() . '/css/merlyn-menu.css', array(), _S_VERSION );
+
+	wp_enqueue_style( 'merlyn-footer-style', get_template_directory_uri() . '/css/merlyn-footer.css', array(), _S_VERSION );
+
+	wp_enqueue_style( 'merlyn-default-style', get_template_directory_uri() . '/css/defaults.css', array(), _S_VERSION );
+
+	// wp_enqueue_style( 'merlyn-style', get_stylesheet_uri(), array(), _S_VERSION );
+
+	// wp_style_add_data( 'merlyn-style', 'rtl', 'replace' );
+
+	// wp_enqueue_script( 'merlyn-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -177,4 +187,5 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
 

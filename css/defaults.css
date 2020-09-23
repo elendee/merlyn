@@ -1,0 +1,66 @@
+body{
+	margin: 0px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.flex-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.oko-row{
+	text-align: center;
+	font-size: 0px;
+}
+
+.oko-column{
+	display: inline-block;
+	vertical-align: top;
+	font-size: initial;
+	width: 100%;
+}
+
+.oko-column2{
+	max-width: 50%;
+}
+
+.oko-column3{
+	max-width: 33.3%;
+}
+
+.oko-column4{
+	max-width: 25%;
+}
+
+
+.oko-contain-wrapper{
+	text-align: center;
+}
+
+.oko-constrain{
+	display: inline-block;
+	width: 100%;
+	max-width: 1000px;
+	text-align: left;
+}
+
+.mobile-only{
+	display: none;
+}
+
+@media screen and (max-width: 768px){
+    
+    .mobile-only{
+    	display: inline-block;
+    }
+
+    .desktop-only{
+    	display: none;
+    }
+
+}
