@@ -28,14 +28,16 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-			the_custom_logo();
+				the_custom_logo();
 			?>
-
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php $merlyn_description = get_bloginfo( 'description', 'display' );
-			if ( $merlyn_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $merlyn_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<?php 
+				$merlyn_description = get_bloginfo( 'description', 'display' );
+				if ( $merlyn_description || is_customize_preview() ) :
+			?>
+				<p class="site-description">
+					<?php echo $merlyn_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				</p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
