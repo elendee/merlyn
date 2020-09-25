@@ -30,15 +30,17 @@
 			<?php
 				the_custom_logo();
 			?>
+			<div class='header-words'>
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php 
-				$merlyn_description = get_bloginfo( 'description', 'display' );
-				if ( $merlyn_description || is_customize_preview() ) :
-			?>
-				<p class="site-description">
-					<?php echo $merlyn_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-				</p>
-			<?php endif; ?>
+				<?php 
+					$merlyn_description = get_bloginfo( 'description', 'display' );
+					if ( $merlyn_description || is_customize_preview() ) :
+				?>
+					<p class="site-description">
+						<?php echo $merlyn_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+					</p>
+				<?php endif; ?>
+			</div>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
