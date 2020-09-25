@@ -8,11 +8,10 @@
 	padding: 0 20px;
 	background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    transition: .5s;
 }
 
-.scrolled #masthead{
-	height: 80px;
-}
+
 
 #masthead>div,
 #masthead>nav{
@@ -21,8 +20,10 @@
 }
 
 #primary{
-    margin-top: 80px;
+    margin-top: 120px;
 }
+
+
 
 .site-branding{
     position: relative;
@@ -44,12 +45,17 @@
     position: relative;
 	height: 120%;
 	padding-top: 10px;
+	transition: .5s;
 /*     transform: translate(0, 30px) */
 }
 
 .site-branding img{
 	height: 100%;
 	width: auto;
+}
+
+.site-title{
+	font-size: 1.2rem;
 }
 
 #site-navigation{
@@ -75,6 +81,18 @@ ul#primary-menu{
 #primary-menu li{
     display: inline-block;
     padding: 10px;
+}
+
+.scrolled #masthead{
+	height: 80px;
+}
+
+.scrolled #primary{
+	margin-top: 80px;
+}
+
+.scrolled .site-branding p{
+	margin: 5px 0;
 }
 
 @media screen and (max-width: 768px){
