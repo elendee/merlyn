@@ -45,7 +45,7 @@ body{
 .oko-constrain{
 	display: inline-block;
 	width: 100%;
-	max-width: 1000px;
+	max-width: 900px;
 	text-align: left;
 }
 
