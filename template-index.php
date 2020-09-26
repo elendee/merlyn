@@ -30,7 +30,28 @@ get_header();
 
 					$link = get_permalink();
 
-					echo '<div class="merlyn-post-wrap">';
+					$cats = get_the_category();
+
+					$categories = '';
+
+					foreach( $cats as $cat ){
+						# code...
+						// echo $key . '---' . $value;
+						// foreach ($cat as $subcat) {
+							// echo $cat . ': ' . $subcat . '<br>';
+						// }
+						$categories = $categories . ' ' . $cat->name;
+						// echo $cat->slug;
+						// echo $cat->name;
+						// echo $cat->category;
+						// // echo $cat->;
+						// echo '<br>';
+						// var_dump( $cat );
+					}
+
+					// echo '<h1>' . get_the_category() . '</h1>';
+
+					echo '<div class="merlyn-post-wrap" data-categories="' . $categories . '">';
 						echo '<a href="' . $link . '">';
 							the_title('<h2 class="entry-title">', '</h2>');
 							// echo '<div class="merlyn-thumb">';
