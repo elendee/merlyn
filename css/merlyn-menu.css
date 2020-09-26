@@ -130,8 +130,8 @@ ul#primary-menu{
     	max-width: 50%;
     	border: 1px solid;
     } */
-    
 
+    .site-title,
     .site-description{
     	display: none;
     }
