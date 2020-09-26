@@ -1,0 +1,16 @@
+#primary,
+#secondary{
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 50px;
+}
+#primary{
+    max-width: 68%;
+}
+#secondary{
+    max-width: 30%
+}
+#merlyn-content{
+    padding-top: 0px;
+}

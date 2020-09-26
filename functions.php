@@ -156,8 +156,16 @@ function merlyn_scripts() {
 	wp_enqueue_script( 'merlyn-base', get_template_directory_uri() . '/js/merlyn-base.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+
 		wp_enqueue_script( 'comment-reply' );
+
+	}elseif ( is_page_template('template-index.php') ) {
+
+		wp_enqueue_style( 'merl-index', get_template_directory_uri() . '/css/merl-index.css', array(), $cache_bust );
+		// wp_enqueue_script( 'merlyn-js', get_template_directory_uri() . '/js/oko-scratchpad.js', array(), $cache_bust );
+
 	}
+
 }
 add_action( 'wp_enqueue_scripts', 'merlyn_scripts' );
 

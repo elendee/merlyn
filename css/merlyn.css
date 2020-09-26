@@ -7,6 +7,7 @@ a{
 }
 
 main{
+/* 	padding: 40px; */
 /* 	border: 2px solid red; */
 }
 
@@ -25,4 +26,16 @@ main{
 article .entry-content
 article .entry-title{
 	padding: 0 5%
+}
+
+.merlyn-post-wrap{
+	margin-bottom: 80px;
+}
+
+#primary>ul{
+	padding-left: 0px;
+}
+
+#merlyn-content{
+	padding: 40px;
 }

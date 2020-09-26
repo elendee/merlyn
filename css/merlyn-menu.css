@@ -41,6 +41,10 @@
 	max-width: 50%;
 }
 
+.site-branding>.header-words{
+	margin-left: 10px;
+}
+
 .site-branding>.custom-logo-link{
     position: relative;
 	height: 120%;
@@ -91,8 +95,16 @@ ul#primary-menu{
 	margin-top: 80px;
 }
 
+.scrolled .header-words{
+	padding-top: 20px;
+}
+
 .scrolled .site-branding p{
 	margin: 5px 0;
+}
+
+.scrolled .site-description{
+    display: none;
 }
 
 @media screen and (max-width: 768px){
