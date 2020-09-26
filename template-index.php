@@ -37,7 +37,10 @@ get_header();
 								the_post_thumbnail('large');
 							echo '</div>';
 						echo '</a>';
-						the_excerpt('<div class="merlyn-excerpt">', '</div>');
+						echo '<div class="merlyn-content">';
+							the_content();
+						echo '</div>';
+						// the_excerpt('<div class="merlyn-excerpt">', '</div>');
 					echo '</div>';
 
 					?>
