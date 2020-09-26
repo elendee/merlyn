@@ -121,6 +121,24 @@ ul#primary-menu{
     button.menu-toggle{
         display: inline-block;
     }
+/* 
+    .site-branding{
+        white-space: initial;
+    }   
+
+    .site-branding>*{
+    	max-width: 50%;
+    	border: 1px solid;
+    } */
+    
+
+    .site-description{
+    	display: none;
+    }
+
+    #site-navigation button.menu-toggle{
+    	display: none;
+    }
     
 
 }
