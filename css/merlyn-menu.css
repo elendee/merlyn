@@ -101,6 +101,7 @@ ul#primary-menu{
 
 .scrolled .site-branding p{
 	margin: 5px 0;
+	white-space: nowrap;
 }
 
 .scrolled .site-description{
