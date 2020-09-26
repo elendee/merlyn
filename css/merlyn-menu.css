@@ -28,8 +28,9 @@
 .site-branding{
     position: relative;
     display: inline-block;
-    width: 38%;
+    width: 45%;
 	height: 100%;
+/* 	border: 1px solid; */
 }
 .site-branding *{
 /* 	border: 1px solid; */
@@ -68,7 +69,7 @@
 #site-navigation{
 /*     border: 1px solid red; */
     display: inline-block;
-    width: 62%;
+    width: 55%;
 }
 
 button.menu-toggle{
