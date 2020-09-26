@@ -19,7 +19,7 @@
     vertical-align: top;
 }
 
-#primary{
+.page-banner{
     margin-top: 120px;
 }
 
@@ -91,7 +91,7 @@ ul#primary-menu{
 	height: 80px;
 }
 
-.scrolled #primary{
+.scrolled .page-banner{
 	margin-top: 80px;
 }
 
