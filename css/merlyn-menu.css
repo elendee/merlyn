@@ -30,6 +30,7 @@
     display: inline-block;
     width: 45%;
 	height: 100%;
+	white-space: nowrap;
 /* 	border: 1px solid; */
 }
 .site-branding *{
@@ -39,7 +40,7 @@
 	display: inline-block;
 	vertical-align: top;
 /* 	border: 1px solid red; */
-	max-width: 50%;
+	max-width: 70%;
 }
 
 .site-branding>.header-words{
