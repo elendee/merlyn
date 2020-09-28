@@ -14,30 +14,28 @@
 
 get_header();
 ?>
+	
+	<div id='merlyn-primary'></div> <!-- allow both banner and non-banner pages to have margin top under header -->
 
-	<div id='merlyn-primary'> <!-- allow both banner and non-banner pages to have margin top under header -->
+	<main id="primary" class="site-main">
 
-		<main id="primary" class="site-main">
+		<div id='merlyn-content'>
+		
+			<div class='oko-contain-wrapper'>
 
-			<div id='merlyn-content'>
-			
-				<div class='oko-contain-wrapper'>
+				<div class='oko-constrain'>
 
-					<div class='oko-constrain'>
-
-						<?php
-							woocommerce_content();
-						?>
-
-					</div>
+					<?php
+						woocommerce_content();
+					?>
 
 				</div>
 
 			</div>
 
-		</main><!-- #main -->
+		</div>
 
-	</div>
+	</main><!-- #main -->
 
 <?php
 // get_sidebar();
