@@ -10,51 +10,55 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<div id='merlyn-primary' class='oko-contain-wrapper'> <!-- allow both banner and non-banner pages to have margin top under header -->
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'merlyn' ); ?></h1>
-			</header><!-- .page-header -->
+		<main id="primary" class="site-main oko-constrain">
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'merlyn' ); ?></p>
+			<section class="error-404 not-found">
+				<header class="page-header">
+					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'merlyn' ); ?></h1>
+				</header><!-- .page-header -->
 
-					<?php
-					get_search_form();
+				<div class="page-content">
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'merlyn' ); ?></p>
 
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+						<?php
+						get_search_form();
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'merlyn' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
+						the_widget( 'WP_Widget_Recent_Posts' );
+						?>
 
-					<?php
-					/* translators: %1$s: smiley */
-					$merlyn_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'merlyn' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$merlyn_archive_content" );
+						<div class="widget widget_categories">
+							<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'merlyn' ); ?></h2>
+							<ul>
+								<?php
+								wp_list_categories(
+									array(
+										'orderby'    => 'count',
+										'order'      => 'DESC',
+										'show_count' => 1,
+										'title_li'   => '',
+										'number'     => 10,
+									)
+								);
+								?>
+							</ul>
+						</div><!-- .widget -->
 
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+						<?php
+						/* translators: %1$s: smiley */
+						$merlyn_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'merlyn' ), convert_smilies( ':)' ) ) . '</p>';
+						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$merlyn_archive_content" );
 
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
+						the_widget( 'WP_Widget_Tag_Cloud' );
+						?>
 
-	</main><!-- #main -->
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->
+
+		</main><!-- #main -->
+
+	</div>
 
 <?php
 get_footer();
