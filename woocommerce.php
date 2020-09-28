@@ -15,15 +15,6 @@
 get_header();
 ?>
 
-	<!-- doesnt work ...  -->
-	<?php 
-		if( get_field('page_banner')){
-			echo '<br><br><br><br><br><h1>got em</h1>';
-		}
-	?>
-
-	<?php include 'page_banner.php' ?>
-
 	<main id="primary" class="site-main">
 
 		<div id='merlyn-content'>

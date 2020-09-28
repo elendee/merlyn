@@ -179,7 +179,7 @@ add_action( 'wp_enqueue_scripts', 'merlyn_scripts' );
 
 function meryln_woo_scripts(){
 
-	if( is_shop() ){
+	if( is_shop() || is_cart() || is_checkout() ){
 
 		wp_enqueue_style( 'merlyn-woo-style', get_template_directory_uri() . '/css/woo.css', array(), _S_VERSION );
 
@@ -228,19 +228,19 @@ add_action( 'after_setup_theme', 'merlyn_add_woocommerce_support' );
 
 
 
-add_filter( 'acf/location/rule_values/page_type', function ( $choices ) {
-   $choices['woo_shop_page'] = 'WooCommerce Shop Page';
-   return $choices;
-});
+// add_filter( 'acf/location/rule_values/page_type', function ( $choices ) {
+//    $choices['woo_shop_page'] = 'WooCommerce Shop Page';
+//    return $choices;
+// });
 
-add_filter( 'acf/location/rule_match/page_type', function ( $match, $rule, $options ) {
-   if ( $rule['value'] == 'woo_shop_page' && isset( $options['post_id'] ) ){
-      if ( $rule['operator'] == '==' ){
-        $match = ( $options['post_id'] == wc_get_page_id( 'shop' ) );
-     	}
-      if ( $rule['operator'] == '!=' ){
-      	$match = ( $options['post_id'] != wc_get_page_id( 'shop' ) );
-      }
-   }
-   return $match;
-}, 10, 3 );
+// add_filter( 'acf/location/rule_match/page_type', function ( $match, $rule, $options ) {
+//    if ( $rule['value'] == 'woo_shop_page' && isset( $options['post_id'] ) ){
+//       if ( $rule['operator'] == '==' ){
+//         $match = ( $options['post_id'] == wc_get_page_id( 'shop' ) );
+//      	}
+//       if ( $rule['operator'] == '!=' ){
+//       	$match = ( $options['post_id'] != wc_get_page_id( 'shop' ) );
+//       }
+//    }
+//    return $match;
+// }, 10, 3 );
