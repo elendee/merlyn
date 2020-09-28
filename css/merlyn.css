@@ -23,6 +23,10 @@ main{
 	background-repeat: no-repeat;
 }
 
+.banner-overlay{
+	background: rgba( 255, 255, 255, .5);
+}
+
 article .entry-content
 article .entry-title{
 	padding: 0 5%
