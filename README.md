@@ -11,7 +11,7 @@ it gives maximum code-ability through the theme itself.
 
 it is highly recommended to install the following plugins to help this.
 - Advanced Custom Fields
-merlyn is pre-configured to use several fields such as banner images and footer content - install them using the ACF json file found in the "/resources" folder of this theme.
+-- merlyn is pre-configured to use several fields such as banner images and footer content - install them using the ACF json file found in the "/resources" folder of this theme.
 - Contact Form 7
 merlyn has CSS all ready to go for WPCF7 forms
 - Woocommerce (optional)
