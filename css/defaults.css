@@ -72,4 +72,10 @@ iframe{
     	display: none;
     }
 
+    .oko-column2,
+    .oko-column3,
+    .oko-column4{
+    	max-width: 100%;
+    }
+
 }

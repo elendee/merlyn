@@ -1,0 +1,117 @@
+[
+    {
+        "key": "group_5f6bd504e9e94",
+        "title": "All Pages and Posts",
+        "fields": [
+            {
+                "key": "field_5f6bd50f3953e",
+                "label": "page banner",
+                "name": "page_banner",
+                "type": "image",
+                "instructions": "this will appear at the top of the page as a banner",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "large",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5f6bd83954066",
+                "label": "page banner height desktop",
+                "name": "page_banner_height_desktop",
+                "type": "number",
+                "instructions": "The height of the banner in pixels on desktop (screens wider than 768px).\r\nDefaults to 200.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5f6bd88d8e1b6",
+                "label": "page banner height mobile",
+                "name": "page_banner_height_mobile",
+                "type": "number",
+                "instructions": "The height of the banner in pixels on mobile (screens smaller than 768px).\r\nDefaults to 200.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5f724dba872d2",
+                "label": "banner overlay",
+                "name": "banner_overlay",
+                "type": "wysiwyg",
+                "instructions": "This content will be displayed on top of your banner image, centered, and constrained approx 900px wide",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

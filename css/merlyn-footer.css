@@ -1,4 +1,12 @@
+#merl-footer-widgets{
 
+}
+
+/* #merl-footer-widgets .widget{
+    border: 2px solid;
+    display: inline-block;
+}
+ */
 #colophon{
     background: grey;
     color: white;
@@ -9,3 +17,15 @@
     height: 200px;
 }
 
+#colophon .oko-column{
+    text-align: left;
+    padding: 20px;
+}
+
+#colophon .oko-column li{
+    list-style: none;
+}
+
+#colophon .oko-column ul{
+    padding-left: 0px;
+}
