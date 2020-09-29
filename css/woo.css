@@ -6,3 +6,9 @@
 .woocommerce button.button.alt:hover{
 	background: grey;
 }
+
+.woocommerce .quantity input{
+	padding: 5px 5px;
+	border-radius: 0px;
+	border: 1px solid grey;
+}
