@@ -1,0 +1,8 @@
+.woocommerce button.button.alt{
+    background: black;
+    border-radius: 0px;
+}
+
+.woocommerce button.button.alt:hover{
+	background: grey;
+}
