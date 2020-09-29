@@ -179,7 +179,7 @@ add_action( 'wp_enqueue_scripts', 'merlyn_scripts' );
 
 function meryln_woo_scripts(){
 
-	if( is_shop() || is_cart() || is_checkout() ){
+	if( is_shop() || is_cart() || is_checkout() || is_product() ){
 
 		wp_enqueue_style( 'merlyn-woo-style', get_template_directory_uri() . '/css/woo.css', array(), _S_VERSION );
 
