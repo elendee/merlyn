@@ -1,9 +1,18 @@
 let scroll_flag
 
+const menu_toggle = document.querySelector('svg.menu-toggle')
+const menu = document.querySelector('.menu-menu-1-container')
+const site_nav = document.querySelector('#site-navigation')
+
 document.addEventListener('DOMContentLoaded', ()=>{
 
-
-
+	menu_toggle.addEventListener('click', () => {
+		if( site_nav.classList.contains('toggled') ){
+			site_nav.classList.remove('toggled')
+		}else{
+			site_nav.classList.add('toggled')
+		}
+	})
 
 })
 

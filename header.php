@@ -44,7 +44,12 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'merlyn' ); ?></button>
+			<svg class='menu-toggle' viewBox='0 0 100 100' >	
+				<path id='menuL' d="M 16.015625,64.875000 L 84.585938,64.875000 L 84.585938,74.761719 L 16.015625,74.761719 L 16.015625,64.875000	z"	/>
+				<path id='menuC' d="M 16.070312,42.359375 L 84.640625,42.359375 L 84.640625,52.246094 L 16.070312,52.246094 L 16.070312,42.359375	z"	/>
+				<path id='menuR' d="M 15.679688,21.222656 L 84.250000,21.222656 L 84.250000,31.109375 L 15.679688,31.109375 L 15.679688,21.222656	z"	/>
+			</svg>
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'merlyn' ); ?></button> -->
 			<?php
 			wp_nav_menu(
 				array(

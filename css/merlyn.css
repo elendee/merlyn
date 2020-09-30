@@ -25,6 +25,7 @@ main{
 
 .banner-overlay{
 	background: rgba( 255, 255, 255, .4);
+	overflow: hidden;;
 }
 
 article .entry-content

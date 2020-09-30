@@ -28,6 +28,7 @@
 
 .site-branding{
     position: relative;
+    z-index: 9;
     display: inline-block;
     width: 45%;
 	height: 100%;
@@ -59,6 +60,7 @@
 .site-branding img{
 	height: 100%;
 	width: auto;
+	max-width: 999%;
 }
 
 .site-title{
@@ -74,11 +76,6 @@
     width: 55%;
 }
 
-button.menu-toggle{
-/*     border: 3px solid blue; */
-    display: none;
-}
-
 .menu-menu-1-container{
 /*     border: 1px solid orange; */
 }
@@ -86,6 +83,7 @@ button.menu-toggle{
 ul#primary-menu{
 /*     border: 1px solid teal; */
     text-align: right;
+    padding-left: 0px;
 }
 
 #primary-menu li{
@@ -122,29 +120,76 @@ ul#primary-menu{
     display: none;
 }
 
+svg.menu-toggle{
+	background: transparent;
+	border: 0px;
+    display: none;
+    width: 40px;
+}
+
+
 @media screen and (max-width: 768px){
 
-    button.menu-toggle{
+    svg.menu-toggle{
         display: inline-block;
     }
-/* 
-    .site-branding{
-        white-space: initial;
-    }   
-
-    .site-branding>*{
-    	max-width: 50%;
-    	border: 1px solid;
-    } */
 
     .site-title,
     .site-description{
     	display: none;
     }
 
-    #site-navigation button.menu-toggle{
-    	display: none;
+    svg.menu-toggle{
+    	position: absolute;
+    	top: 40px;
+    	right: 10px;
+    }
+
+    .menu-menu-1-container{
+    	position: fixed;
+    	width: 100%;
+    	margin: 0;
+    	padding: 10px 0;
+    	background: white;
+    	right:-1000px;
+    	top: 110px;
+    	transition: .5s;
+    }
+
+    #site-navigation.toggled .menu-menu-1-container{
+    	top: 110px;
+    	right: 0px;
+    }
+
+    .scrolled #site-navigation.toggled .menu-menu-1-container{ 
+    	top: 80px;
+    }
+
+    .scrolled svg.menu-toggle{
+/*     	border: 1px solid; */
+    	top: 20px;
     }
     
+    .toggled svg path{
+    	transition: .5s;
+    }
+
+    .toggled svg path:nth-of-type(2){
+    	transform: translate(-20px, 0);
+    }
+    .toggled svg path:nth-of-type(1){
+    	transform: translate(-40px, 0);
+    }
+
+    .menu-toggle{
+    	overflow: visible;
+    }
+    
+    #primary-menu li{
+    	width: 100%;
+    	text-align: center;
+    	padding: 15px 0;
+    	display: inline-block;
+    }
 
 }
