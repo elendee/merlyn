@@ -76,7 +76,7 @@ get_header();
 
 			<?php else : ?>
 
-				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<p><?php _e( '' ); ?></p>
 
 			<?php endif; ?>
 
